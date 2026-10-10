@@ -1,0 +1,30 @@
+# Site settings — edit these
+title: Alec C. Zhu
+description: Personal website of Alec C. Zhu, PhD student in Operations Research and Financial Engineering at Princeton University.
+email: az4754@princeton.edu
+author: Alec C. Zhu
+
+# Nav links shown in the header (order matters)
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Other
+    url: /other/
+
+# If this is a project site (username.github.io/repo-name), set baseurl: "/repo-name"
+# If it's your user site (username.github.io), leave it empty.
+baseurl: ""
+url: "https://apc1234567.github.io"
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - cv/

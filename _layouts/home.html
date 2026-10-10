@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class="home">
+  {% if page.photo %}<img class="portrait" src="{{ page.photo | relative_url }}" alt="Portrait of {{ site.author }}">{% endif %}
+  {% if page.role %}<p class="role">{{ page.role }}</p>{% endif %}
+  <div class="bio">
+{{ content }}
+  </div>
+</div>

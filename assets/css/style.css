@@ -1,0 +1,205 @@
+/* ------------------------------------------------------------
+   Palette — change these few values to retune the whole site
+   ------------------------------------------------------------ */
+:root {
+  --ink:    #16191d;   /* body text: near-black */
+  --slate:  #3e5468;   /* greyish blue: links, name */
+  --mist:   #6f7d8b;   /* secondary text: dates, venues */
+  --rule:   #d6dce2;   /* hairlines */
+  --paper:  #fcfcfd;   /* background: cool off-white */
+
+  --serif: "EB Garamond", "Baskerville", "Libre Baskerville", Garamond, Georgia, serif;
+  --measure: 36rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink:   #dfe4ea;
+    --slate: #9db3c8;
+    --mist:  #8593a1;
+    --rule:  #2c343d;
+    --paper: #14181d;
+  }
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 20px;
+  -webkit-text-size-adjust: 100%;
+}
+@media (max-width: 600px) { html { font-size: 18px; } }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1rem;
+  line-height: 1.55;
+  font-feature-settings: "kern", "liga", "onum";   /* old-style figures */
+  text-rendering: optimizeLegibility;
+}
+
+.page {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 3rem;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  padding-bottom: 0.9rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-name {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+nav { display: flex; gap: 1.25rem; }
+
+nav a {
+  font-variant: small-caps;
+  font-feature-settings: "smcp", "onum";
+  letter-spacing: 0.04em;
+  color: var(--mist);
+  text-decoration: none;
+}
+nav a:hover, nav a[aria-current="page"] { color: var(--slate); }
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+}
+
+/* ---------- Type ---------- */
+h1, h2, h3 { font-weight: 500; line-height: 1.2; }
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 1.75rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 2.75rem 0 1rem;
+  color: var(--slate);
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 400;
+  margin: 1.75rem 0 0.5rem;
+}
+
+p { margin: 0 0 1rem; hyphens: auto; }
+
+a {
+  color: var(--slate);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: text-decoration-color 0.15s;
+}
+a:hover { text-decoration-color: currentColor; }
+a:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; border-radius: 2px; }
+
+em, i { font-style: italic; }
+strong { font-weight: 600; }
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--rule);
+  color: var(--mist);
+  font-style: italic;
+}
+
+ul, ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+li { margin-bottom: 0.35rem; }
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.8em;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* ---------- Home ---------- */
+.portrait {
+  width: 8.5rem;
+  height: 8.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  float: right;
+  margin: 0.25rem 0 1rem 1.5rem;
+}
+@media (max-width: 600px) {
+  .portrait { float: none; display: block; margin: 0 0 1.5rem; }
+}
+
+.role {
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--slate);
+  line-height: 1.35;
+  margin-bottom: 1.5rem;
+}
+
+.bio { overflow: hidden; }
+
+/* ---------- Research / lists of items ----------
+   In markdown, write an entry as a paragraph:
+     **Title**  
+     Authors  
+     *Venue, Year* [pdf](…) [arXiv](…)
+   It is styled automatically by the rules below.        */
+.entries p {
+  margin-bottom: 1.4rem;
+  line-height: 1.45;
+}
+.entries p strong { font-weight: 500; color: var(--ink); }
+.entries p em { color: var(--mist); }
+
+/* small muted text helper: <span class="muted">…</span> */
+.muted { color: var(--mist); }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  margin-top: 4.5rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--mist);
+}
+.site-footer a { color: var(--mist); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

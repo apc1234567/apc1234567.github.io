@@ -1,0 +1,13 @@
+_site/
+.jekyll-cache/
+Gemfile.lock
+# LaTeX build files
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.fls
+cv/*.fdb_latexmk
+cv/*.synctex.gz
+cv/cv.pdf
+# Built by the GitHub Action — no need to commit
+assets/files/cv.pdf

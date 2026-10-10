@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+
+% ---------- Fonts and colour (matches the website) ----------
+\usepackage[T1]{fontenc}
+\usepackage[osf]{ebgaramond}          % old-style figures, like the site
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+\definecolor{slate}{HTML}{3E5468}
+\definecolor{mist}{HTML}{6F7D8B}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{needspace}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section headings: small caps in slate with a hairline rule
+\titleformat{\section}{\large\scshape\color{slate}}{}{0pt}{}[\vspace{-0.6ex}{\color{mist!40}\rule{\linewidth}{0.4pt}}]
+\titlespacing*{\section}{0pt}{1.6em}{0.8em}
+
+% \entry{left text}{right-aligned date}; moves to the next page rather than split
+\newcommand{\entry}[2]{\needspace{4\baselineskip}\noindent #1 \hfill {\color{mist}#2}\par}
+% \detail{muted second line}
+\newcommand{\detail}[1]{{\color{mist}\itshape #1}\par\vspace{0.6em}}
+% \role{muted second line} followed by bullets (itemize)
+\newcommand{\role}[1]{{\color{mist}\itshape #1}\par}
+
+% Compact bullets with muted dashes
+\setlist[itemize]{nosep, leftmargin=1.2em, label={\color{mist}\textendash}, before=\vspace{0.15em}, after=\vspace{0.6em}}
+
+\begin{document}
+
+% ---------- Header ----------
+{\LARGE Alec C. Zhu}\par
+\vspace{0.4em}
+{\color{mist}
+Operations Research and Financial Engineering, Princeton University\\
+\href{mailto:az4754@princeton.edu}{az4754@princeton.edu} \quad
+\href{https://apc1234567.github.io}{apc1234567.github.io}}
+
+\section{Education}
+\entry{Ph.D., Operations Research and Financial Engineering, Princeton University}{2025--present}
+\vspace{0.6em}
+\entry{B.S., Mathematics with Computer Science, Massachusetts Institute of Technology}{2021--2025}
+\detail{GPA: 5.0/5.0}
+
+\section{Publications}
+\entry{\parbox[t]{0.85\linewidth}{\raggedright\textbf{Stereoretentive and regioselective selenium-catalyzed intermolecular propargylic C–H amination of alkynes}}}{2022}
+\detail{T.\,P. Maloney, A.\,F. Dohoda, \textbf{A.\,C. Zhu}, F.\,E. Michael. \textit{Chemical Science} 13, 2121--2127.}
+
+\section{Teaching}
+\entry{Teaching Assistant, ORF 307: Optimization, Princeton University}{Fall 2026}
+
+\section{Honors and Awards}
+\entry{International Chemistry Olympiad, Gold Medal}{2020}
+\detail{One of four members of the US National Team; ranked 8 of 231.}
+\entry{Regeneron Science Talent Search, Top 300}{2021}
+
+\section{Research Experience}
+\entry{\textbf{Coley Group}, MIT}{June--Aug.\ 2023, Apr.--July 2024}
+\role{Undergraduate Researcher}
+\begin{itemize}
+  \item Studied small-molecule catalysis and protein turbidity with random heteropolymers using high-throughput techniques.
+  \item Designed automated experiments on a Tecan Freedom EVO platform; developed machine learning models for polymer data, including permutation-invariant models such as Deep Sets.
+\end{itemize}
+
+\entry{\textbf{Wendlandt Group}, MIT}{Sept.\ 2021--May 2022}
+\role{Undergraduate Researcher}
+\begin{itemize}
+  \item Developed methods for selective modification of carbohydrates using photoredox catalysis.
+\end{itemize}
+
+\entry{\textbf{Michael Group}, University of Washington}{June 2020--Apr.\ 2021}
+\role{Research Science Institute (RSI) Scholar}
+\begin{itemize}
+  \item Investigated the stereochemistry and regiochemistry of selenium-catalyzed allylic and propargylic amination with computational methods; wrote Bash scripts to run Gaussian on a remote supercomputer.
+\end{itemize}
+
+\section{Other Experience}
+\entry{\textbf{Elevian}}{June--Aug.\ 2022}
+\role{Protein Biochemistry Intern}
+\begin{itemize}
+  \item Chromatographic methods for protein analysis and purification with HPLC and FPLC: size exclusion, reverse phase, ion exchange, and hydrophobic interaction chromatography.
+\end{itemize}
+
+\entry{\textbf{American Chemical Society USNCO Training Camp}}{June 2022}
+\role{Olympiad Camp Mentor}
+\begin{itemize}
+  \item Prepared lectures and exam material to train the US team for the International Chemistry Olympiad.
+\end{itemize}
+
+\entry{\textbf{V-Systems}}{May--Aug.\ 2021}
+\role{Software Intern}
+\begin{itemize}
+  \item Added ranking and data-tracking features to a Python app for playing Go; worked with OSC networking via oscpy.
+\end{itemize}
+
+\section{Coursework}
+\textit{Graduate:} Random Matrix Theory, Inference and Information, Algorithms for Inference, High-Dimensional Statistics, Deep Learning, Symmetry and Machine Learning, Optimization Methods.\par\vspace{0.4em}
+\textit{Mathematics and computer science:} Abstract Algebra I \& II, Real Analysis, Complex Analysis, Differential Equations, Discrete Mathematics, Statistics for Applications, Design and Analysis of Algorithms, Theory of Computation, Seminar in Theoretical Computer Science.\par\vspace{0.4em}
+\textit{Chemistry and physics:} Statistical Mechanics, Quantum Mechanics, Thermodynamics and Kinetics, Fundamentals of Spectroscopy.
+
+\section{Skills}
+\textit{Programming:} Python, Julia, Bash, Gaussian.\par\vspace{0.4em}
+\textit{Laboratory:} air-free technique, flash column chromatography, HPLC, FPLC, NMR, IR, UV-Vis, gel electrophoresis, western blotting.
+
+\end{document}
