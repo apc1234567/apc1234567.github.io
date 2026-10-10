@@ -9,7 +9,7 @@ math: true      # enables $\LaTeX$ math on this page
 
 <div class="entries" markdown="1">
 
-**Faster Parametric Submodular Function Minimization by Exploiting Duality**  
+**Faster Parametric Submodular Function Minimization**  
 S. Gupta, A. C. Zhu  
 *Preprint, 2026; major revision in progress*
 
