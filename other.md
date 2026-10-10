@@ -4,17 +4,16 @@ title: Other
 permalink: /other/
 ---
 
-A place for things outside research. Some ideas for sections:
+## Music
 
-## Reading
+<div class="entries" markdown="1">
 
-- *Book title*, Author — a line on why you liked it.
-- *Another book*, Author
+**Aus Liebe will mein Heiland sterben**  
+J. S. Bach, from the *St Matthew Passion*, BWV 244; my arrangement for piano  
+[score (pdf)]({{ "/assets/files/aus-liebe-will-mein-heiland-sterben.pdf" | relative_url }})
+
+</div>
 
 ## Mahjong
 
-I like to play riichi (Japanese) mahjong. I am currently a 6 dan on [Tenhou](https://tenhou.net/), which is approximately beginner-intermediate strength, but I am always improving! Here is a link to my game records on [nodocchi](https://nodocchi.moe/tenhoulog/#!&name=opgamer).
-
-## Notes
-
-Short essays, recipes, hiking logs, whatever you like. For longer pieces, make a new `.md` file in the root folder (e.g. `hiking.md`) and link to it from here.
+I like to play riichi (Japanese) mahjong. I am currently a 6 dan on [Tenhou](https://tenhou.net/), which is approximately patzer strength, but I am always improving! Here is a link to my game records on [nodocchi](https://nodocchi.moe/tenhoulog/#!&name=opgamer).
