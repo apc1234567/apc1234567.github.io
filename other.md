@@ -13,7 +13,7 @@ Someday I will record these.
 Three pieces I wrote between 2023 and 2025, the first of which was written for a class at MIT in 20th century composition.  
 [score (pdf)]({{ "/assets/files/Triptych.pdf" | relative_url }})
 
-**Fugues on Aus tiefer Not schrei ich zu dir**  
+**Fugues on _Aus tiefer Not schrei ich zu dir_**  
 The prelude is recycled. So far I've written seven fugues, and someday I would like to finish the cycle of eleven or twelve fugues.  
 [score (pdf)]({{ "/assets/files/fugues.pdf" | relative_url }})
 
