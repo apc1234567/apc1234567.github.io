@@ -11,11 +11,9 @@ A place for things outside research. Some ideas for sections:
 - *Book title*, Author — a line on why you liked it.
 - *Another book*, Author
 
-## Photography
+## Mahjong
 
-Drop images into `assets/files/` and reference them like this:
-
-<!-- ![Description of photo](/assets/files/photo.jpg) -->
+I like to play riichi (Japanese) mahjong. I am currently a 6 dan on [Tenhou](https://tenhou.net/), which is approximately beginner-intermediate strength, but I am always improving! Here is a link to my game records on [nodocchi](https://nodocchi.moe/tenhoulog/#!&name=opgamer).
 
 ## Notes
 
